@@ -21,7 +21,9 @@ public class Main {
 
 
         // Задача № 3 //
-        int speed = 61;if (speed > 60) {System.out.println("Если скорость " + speed + " то прийдется заплатить штраф");
+        int speed = 61;
+        if (speed > 60) {
+            System.out.println("Если скорость " + speed + " то прийдется заплатить штраф");
         } else if (speed < 60) {
             System.out.println("Если скорость " + speed + " то можно ездить спокойно");
         }
