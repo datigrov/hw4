@@ -83,6 +83,81 @@ public class Main {
             System.out.println("Число " + one +" наименьшее");
         }
 
+// Домашняя работа по уроку 2 "Условный оператор" //
+
+        // Задача № 1 //
+        int clientIOS = 1;
+        int clientAndroid = 0;
+        if (clientIOS == 0) {
+            System.out.println("Скачайте приложение для iOS");
+        } else if (clientIOS == 1) {
+            System.out.println("Скачайте приложение для android");
+        }
+
+        // Задача № 2 //
+        int clientDeviceYear = 2017;
+        int iOS = 0;
+        if (iOS == 0) {
+            if (clientAndroid >= 2015) {
+                System.out.println("Скачайте приложение для ios");
+            } else {
+                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+            }
+        } else if (iOS == 1) {
+            if (clientDeviceYear >= 2015) {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            } else {
+                System.out.println("Операционная система не поддерживается");
+            }
+        }
+
+        // Задача № 3 //
+        int leapYear = 2015;
+        if ((leapYear % 4 == 0 && 100 != 0 || leapYear % 400 == 0) && leapYear > 1584) {
+            System.out.println(leapYear + " год является високосным");
+         } else {
+            System.out.println(leapYear + " год не является високосным");
+        }
+
+        // Задача № 4 //
+        int deliveryDistance = 95;
+        if (deliveryDistance < 20) {
+            System.out.println("Потребуется один день");
+        } else if (deliveryDistance < 60) {
+            System.out.println("Потребуется два дня");
+        } else if (deliveryDistance < 100) {
+            System.out.println("Потребуется три дня");
+        } else {
+            System.out.println("Свыше 100 км доставки нет");
+        }
+
+        // Задача № 5//
+        int monthNumber = 12;
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 3:
+                System.out.println("Зимний месяц");
+                break;
+            case 4:
+            case 5:
+            case 6:
+                System.out.println("Весенний месяц");
+                break;
+            case 7:
+            case 8:
+            case 9:
+                System.out.println("Летний месяц");
+                break;
+            case 10:
+            case 11:
+            case 12:
+                System.out.println("Осенний месяц");
+                break;
+            default:
+                System.out.println("Такого месяца не существует");
+
+        }
 
     }
 }
